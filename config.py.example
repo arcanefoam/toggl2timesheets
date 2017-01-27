@@ -1,0 +1,19 @@
+from dateutil.rrule import SA, SU, MO, TU, WE, TH, FR
+
+# Toggl API Token
+API_TOKEN = 'ADD YOUR API TOKEN HERE'
+
+#Number Precision
+PRECISION = 2
+
+# Target Configurations
+WORKING_SCHEDULE_PER_DAY = {MO: ['08:00', '16:00'], TU: ['08:00', '16:00'], WE: ['08:00', '16:00'],
+                            TH: ['08:00', '16:00'], FR: ['08:00', '16:00']}
+TOLERANCE_PERCENTAGE = 0.1
+
+# Timezone
+TIMEZONE = 'Europe/Vienna'
+
+# Projects/Clients
+CLIENTS = ['JKU']   # Add/change to other clients that you want to track for your hours
+PROJECTS = []       # Add the list of projects you want to track, leave blank to track all projects from clients
